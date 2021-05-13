@@ -44,6 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ItemVH> {
                 if (s.equals("")){
                     return;
                 }
+                data.set(position, String.valueOf(s));
                 callback.textChangedAt(position, String.valueOf(s));
 
             }
